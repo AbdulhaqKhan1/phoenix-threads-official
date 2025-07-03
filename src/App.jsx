@@ -1,24 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Hero from './components/Hero'
-import NewArrivals from './components/NewArrivals'
-import Contact from './components/Contact'
-import TopTrending from './components/TopTrending'
-// import ProductSlider from './components/ProductSlider'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Hero from './components/Hero';
+import NewArrivals from './components/NewArrivals';
+import TopTrending from './components/TopTrending';
+import Contact from './components/Contact';
+import OrderPage from './components/OrderPage';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Home() {
   return (
-    <div>
-      <Hero/>
-      {/* <ProductSlider/> */}
-      <NewArrivals/>
-      <TopTrending/>
-      <Contact/>
-    </div>
-  )
+    <>
+      <Hero />
+      <NewArrivals />
+      <TopTrending />
+      <Contact />
+    </>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/order/:id" element={<OrderPage />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

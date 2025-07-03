@@ -1,4 +1,7 @@
 import shirt1 from '../assets/shirt1.jpg';
+import shirt2 from '../assets/moves.webp';
+import shirt3 from '../assets/phoenix_trds.webp';
+import shirt4 from '../assets/threads.webp';
 
 export const products = [
   {
@@ -10,19 +13,19 @@ export const products = [
   {
     id: 2,
     name: 'White T-Shirt',
-    image: shirt1,
+    image: shirt2,
     category: 'trending',
   },
   {
     id: 3,
     name: 'Black Hoodie',
-    image: shirt1,
+    image: shirt3,
     category: 'new',
   },
   {
     id: 4,
     name: 'Cargo Pants',
-    image: shirt1,
+    image: shirt4,
     category: 'trending',
   },
   {
@@ -34,19 +37,19 @@ export const products = [
   {
     id: 6,
     name: 'T-shirt with Shorts',
-    image: shirt1,
+    image: shirt2,
     category: 'new',
   },
   {
     id: 7,
     name: 'Gym Wear',
-    image: shirt1,
+    image: shirt3,
     category: 'trending',
   },
   {
     id: 8,
     name: 'Swag Fit',
-    image: shirt1,
+    image: shirt4,
     category: 'trending',
   },
 ];
